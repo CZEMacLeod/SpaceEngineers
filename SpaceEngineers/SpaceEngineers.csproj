@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SpaceEngineers>C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers</SpaceEngineers>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="Sandbox.Common">
+      <HintPath>$(SpaceEngineers)\Bin64\Sandbox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game, processorArchitecture=AMD64">
+      <HintPath>$(SpaceEngineers)\Bin64\Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers, processorArchitecture=AMD64">
+      <HintPath>$(SpaceEngineers)\Bin64\SpaceEngineers.exe</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.Game, processorArchitecture=AMD64">
+      <HintPath>$(SpaceEngineers)\Bin64\SpaceEngineers.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders, processorArchitecture=AMD64">
+      <HintPath>$(SpaceEngineers)\Bin64\SpaceEngineers.ObjectBuilders.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage">
+      <HintPath>$(SpaceEngineers)\Bin64\VRage.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game, processorArchitecture=AMD64">
+      <HintPath>$(SpaceEngineers)\Bin64\VRage.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>$(SpaceEngineers)\Bin64\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>$(SpaceEngineers)\Bin64\VRage.Math.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>
